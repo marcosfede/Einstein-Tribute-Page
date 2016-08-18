@@ -1,0 +1,15 @@
+{
+  "name": "tribute-page",
+  "version": "1.0.0",
+  "description": "Tribute page for FreeCodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Federico Marcos",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "dependencies": {}
+}

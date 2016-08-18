@@ -1,0 +1,30 @@
+#fede {
+	align: center;
+	width: 40em;
+}
+.img {
+	width: 100%;
+	position: relative;
+}
+#timeline-heading {
+	text-align: center;
+	font-size: 2em;
+	padding-top: 10px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+#wikilink {
+	text-align: right;
+	font-size : 1.5em;
+}
+#quote span{
+	position: absolute;
+	bottom: 50%;
+	top: 50%;
+	left: 5%;
+	width: 30%;
+	font-style: oblique;;
+	font-size: 150%;
+	text-align: right;
+}
