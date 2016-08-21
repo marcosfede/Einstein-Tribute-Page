@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -36,7 +36,7 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -54,9 +54,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -257,6 +257,7 @@ header h1 {
 .cd-timeline-content h2 {
   color: #303e49;
 }
+
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;

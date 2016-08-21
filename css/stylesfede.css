@@ -1,30 +1,58 @@
 #fede {
-	align: center;
-	width: 40em;
+    align: center;
+    width: 40em;
 }
 .img {
-	width: 100%;
-	position: relative;
+    width: 100%;
+    position: relative;
 }
 #timeline-heading {
-	text-align: center;
-	font-size: 2em;
-	padding-top: 10px;
+		position: relative;
+    width: 40%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 2em;
+    background-color: white;
+}
+#timeline-heading:after{
+    position: absolute;;
+		content:"";
+    width:0;
+    height:0;
+    border-top:20px solid white;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+		border-right: 20px solid transparent;
 }
 body {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#timeline {
+    background-image: url(../img/background/6.jpg);
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 1);
 }
 #wikilink {
-	text-align: right;
-	font-size : 1.5em;
+    text-align: right;
+    font-size: 1.5em;
 }
-#quote span{
-	position: absolute;
-	bottom: 50%;
-	top: 50%;
-	left: 5%;
-	width: 30%;
-	font-style: oblique;;
-	font-size: 150%;
-	text-align: right;
+#quote span {
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    left: 5%;
+    width: 30%;
+    font-style: oblique;
+    ;
+    font-size: 150%;
+    text-align: right;
+}
+.cd-timeline-content .mjx-math {
+    color: #303e49;
+}
+.cd-timeline-img img {
+    width: 75%;
+    height: 75%;
+    margin-left: -36%;
+    margin-top: -36%;
 }
