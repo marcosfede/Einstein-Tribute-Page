@@ -4,6 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Einstein Tribute page</title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 	<!-- timeline deps -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -14,267 +18,285 @@
 	<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 	<!-- jquery for timeline -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<div class="img">
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<!-- big image -->
+	<div id="img">
 		<img src="img/einstein.jpg">
 	</div>
-	<div id="timeline" class="container">
-		<div style="height: 30px;">
 
-		</div>
-				<div class= "tl-heading" id="timeline-heading">
-					<div>
-						<h3 > Some achievements </h3>
+	<!--container for the rest -->
+		<div id="timeline">
+			<div class="container">
+				<div class="row">
+			<div class="col s12 m8 offset-m2 l6 offset-l3">
+				<div id="heading-card" class="card-panel grey lighten-5 z-depth-2">
+					<div id ="heading-card-content" class="row valign-wrapper">
+						<div class="col s2">
+							<img src="https://pbs.twimg.com/profile_images/677611907495288832/ETYIfrqd.jpg" alt="" class="circle responsive-img">
+							<!-- notice the "circle" class -->
+						</div>
+						<div class="col s10">
+							<span>
+		                Some of his greatest contributions
+		              </span>
+						</div>
 					</div>
 				</div>
-				<section id="cd-timeline" class="cd-container">
-
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-picture">
-							<img src="img/dna.svg" alt="Picture">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Brownian Motion</h2>
-							<p>Albert Einstein's first paper submitted in 1900 to Annalen der Physik was on capillary attraction. The two papers he published in 1902–1903 (thermodynamics) attempted to interpret atomic phenomena from a statistical point of view. These papers
-								were the foundation for the 1905 paper on Brownian motion, which showed that Brownian movement can be construed as firm evidence that molecules exist.</p>
-							<a href="https://en.wikipedia.org/wiki/Brownian_motion" class="cd-read-more">Read more</a>
-							<span class="cd-date">1900</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-location">
-							<img src="img/stopwatch.svg" alt="Picture">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>General principles</h2>
-							<p> He articulated the principle of relativity. This was understood by Hermann Minkowski to be a generalization of rotational invariance from space to space-time. Other principles postulated by Einstein and later vindicated are the principle of equivalence
-								and the principle of adiabatic invariance of the quantum number.</p>
-							<a href="https://en.wikipedia.org/wiki/Principle_of_relativity" class="cd-read-more">Read more</a>
-							<span class="cd-date">1905</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-movie">
-							<img src="img/theory-of-relativity.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Special theory of relativity and \(E = mc^2 \)</h2>
-							<p> Einstein's "Zur Elektrodynamik bewegter Körper" ("On the Electrodynamics of Moving Bodies") was received on 30 June 1905.
-								<br /> It reconciles Maxwell's equations for electricity and magnetism with the laws of mechanics, by introducing major changes to mechanics close to the speed of light. This later became known as Einstein's special theory of relativity.
-								<br /> In his paper on mass–energy equivalence, Einstein produced \( E = mc^2 \) from his special relativity equations.</p>
-							<a href="https://en.wikipedia.org/wiki/Special_relativity" class="cd-read-more">Read more</a>
-							<span class="cd-date">1905</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-picture">
-							<img src="img/comet.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Photons and energy quanta</h2>
-							<p> In a 1905 paper, Einstein postulated that light itself consists of localized particles (quanta). Einstein's light quanta were nearly universally rejected by all physicists, including Max Planck and Niels Bohr. This idea only became universally
-								accepted in 1919, with Robert Millikan's detailed experiments on the photoelectric effect, and with the measurement of Compton scattering.</p>
-							<a href="https://en.wikipedia.org/wiki/Photon" class="cd-read-more">Read more</a>
-							<span class="cd-date">1905</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-
-
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-location">
-							<img src="img/cube.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Quantized atomic vibrations</h2>
-							<p> In 1907, Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator. In the Einstein model, each atom oscillates independently—a series of equally spaced quantized states for each oscillator.
-								Einstein was aware that getting the frequency of the actual oscillations would be different, but he nevertheless proposed this theory because it was a particularly clear demonstration that quantum mechanics could solve the specific heat problem
-								in classical mechanics. </p>
-							<a href="https://en.wikipedia.org/wiki/Einstein_solid" class="cd-read-more">Read more</a>
-							<span class="cd-date">1907</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-movie">
-							<img src="img/levels.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Wave–particle duality</h2>
-							<p> Einstein showed that Max Planck's energy quanta must have well-defined momenta and act in some respects as independent, point-like particles. This paper introduced the photon concept (although the name photon was introduced later by Gilbert N.
-								Lewis in 1926) and inspired the notion of wave–particle duality in quantum mechanics. Einstein saw this wave–particle duality in radiation as concrete evidence for his conviction that physics needed a new, unified foundation.
-							</p>
-							<a href="https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality" class="cd-read-more">Read more</a>
-							<span class="cd-date">1909</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-picture">
-							<img src="img/genrel.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>General relativity and the equivalence principle</h2>
-							<p>
-								General relativity (GR) is a theory of gravitation that was developed by Albert Einstein between 1907 and 1915. According to general relativity, the observed gravitational attraction between masses results from the warping of space and time by those masses.
-								General relativity has developed into an essential tool in modern astrophysics. It provides the foundation for the current understanding of black holes, regions of space where gravitational attraction is so strong that not even light can escape.
-							</p>
-							<a href="https://en.wikipedia.org/wiki/History_of_general_relativity" class="cd-read-more">Read more</a>
-							<span class="cd-date">1907-1915</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-location">
-							<img src="img/golf.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Hole argument and Entwurf theory</h2>
-							<p> While developing general relativity, Einstein became confused about the gauge invariance in the theory. He formulated an argument that led him to conclude that a general relativistic field theory is impossible. He gave up looking for fully generally
-								covariant tensor equations, and searched for equations that would be invariant under general linear transformations only.
-								<br /> In June 1913, the Entwurf ("draft") theory was the result of these investigations. As its name suggests, it was a sketch of a theory, less elegant and more difficult than general relativity, with the equations of motion supplemented by additional
-								gauge fixing conditions.
-							</p>
-							<a href="https://en.wikipedia.org/wiki/Hole_argument" class="cd-read-more">Read more</a>
-							<span class="cd-date">1913-1915</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-movie">
-							<img src="img/wave.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Gravitational waves</h2>
-							<p>
-								In 1916, Einstein predicted gravitational waves, ripples in the curvature of spacetime which propagate as waves, traveling outward from the source, transporting energy as gravitational radiation. The existence of gravitational waves is possible under
-								general relativity due to its Lorentz invariance which brings the concept of a finite speed of propagation of the physical interactions of gravity with it.
-							</p>
-							<a href="https://en.wikipedia.org/wiki/Gravitational_wave" class="cd-read-more">Read more</a>
-							<span class="cd-date">1916</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-picture">
-								<img src="img/black-hole.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Cosmology</h2>
-							<p> In 1917, Einstein applied the general theory of relativity to the structure of the universe as a whole. He discovered that the general field equations predicted a universe that was dynamic, either contracting or expanding. As observational evidence
-								for a dynamic universe was not known at the time, Einstein introduced a new term, the cosmological constant, to the field equations, in order to allow the theory to predict a static universe. The modified field equations predicted a static universe
-								of closed curvature, in accordance with Einstein's understanding of Mach's principle in these years.
-							</p>
-							<a href="https://en.wikipedia.org/wiki/Cosmology" class="cd-read-more">Read more</a>
-							<span class="cd-date">1917</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-location">
-							<img src="img/diagram.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Bose–Einstein statistics</h2>
-							<p> In 1924, Einstein received a description of a statistical model from Indian physicist Satyendra Nath Bose, based on a counting method that assumed that light could be understood as a gas of indistinguishable particles. Einstein noted that Bose's
-								statistics applied to some atoms as well as to the proposed light particles, and submitted his translation of Bose's paper to the Zeitschrift für Physik. Einstein also published his own articles describing the model and its implications, among
-								them the Bose–Einstein condensate phenomenon that some particulates should appear at very low temperatures.
-							</p>
-							<a href="https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_statistics" class="cd-read-more">Read more</a>
-							<span class="cd-date">1924</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-movie">
-							<img src="img/brainstorm.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Einstein–Podolsky–Rosen paradox</h2>
-							<p> In 1935, Einstein returned to the question of quantum mechanics. He considered how a measurement on one of two entangled particles would affect the other. He noted, along with his collaborators, that by performing different measurements on the
-								distant particle, either of position or momentum, different properties of the entangled partner could be discovered without disturbing it in any way.
-								<br /> He then used a hypothesis of local realism to conclude that the other particle had these properties already determined. The principle he proposed is that if it is possible to determine what the answer to a position or momentum measurement would
-								be, without in any way disturbing the particle, then the particle actually has values of position or momentum.
-							</p>
-							<a href="https://en.wikipedia.org/wiki/EPR_paradox" class="cd-read-more">Read more</a>
-							<span class="cd-date">1935</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-picture">
-							<img src="img/shrink.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>Unified field theory</h2>
-							<p> Following his research on general relativity, Einstein entered into a series of attempts to generalize his geometric theory of gravitation to include electromagnetism as another aspect of a single entity. In 1950, he described his "unified field
-								theory" in a Scientific American article entitled "On the Generalized Theory of Gravitation". Although he continued to be lauded for his work, Einstein became increasingly isolated in his research, and his efforts were ultimately unsuccessful.
-								In his pursuit of a unification of the fundamental forces, Einstein ignored some mainstream developments in physics, most notably the strong and weak nuclear forces, which were not well understood until many years after his death. Mainstream physics,
-								in turn, largely ignored Einstein's approaches to unification. Einstein's dream of unifying other laws of physics with gravity motivates modern quests for a theory of everything and in particular string theory, where geometrical fields emerge
-								in a unified quantum-mechanical setting.
-							</p>
-							<a href="https://en.wikipedia.org/wiki/Classical_unified_field_theories" class="cd-read-more">Read more</a>
-							<span class="cd-date">1950</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
-					<!-- cd-timeline-block -->
-					<div class="cd-timeline-block">
-						<div class="cd-timeline-img cd-location">
-							<img src="img/wikipedia.svg" alt="Movie">
-						</div>
-						<!-- cd-timeline-img -->
-						<div class="cd-timeline-content">
-							<h2>And many, many more...</h2>
-							<p> This was just a small subset of what this man has done for mankind and science. If you want to know more about the greatest genius that has ever lived, just click the Button!
-							</p>
-							<a href="https://en.wikipedia.org/wiki/Albert_Einstein" class="cd-read-more">Read more</a>
-							<span class="cd-date">now</span>
-						</div>
-						<!-- cd-timeline-content -->
-					</div>
 			</div>
-			<!-- cd-timeline-block -->
-			</section>
-			<!-- cd-timeline -->
 		</div>
+		</div>
+
+			<section id="cd-timeline" class="cd-container">
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="img/dna.svg" alt="Picture">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content z-depth-2">
+						<h2>Brownian Motion</h2>
+						<p>Albert Einstein's first paper submitted in 1900 to Annalen der Physik was on capillary attraction. The two papers he published in 1902–1903 (thermodynamics) attempted to interpret atomic phenomena from a statistical point of view. These papers were
+							the foundation for the 1905 paper on Brownian motion, which showed that Brownian movement can be construed as firm evidence that molecules exist.</p>
+						<a href="https://en.wikipedia.org/wiki/Brownian_motion" class="cd-read-more">Read more</a>
+						<span class="cd-date">1900</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="img/stopwatch.svg" alt="Picture">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>General principles</h2>
+						<p> He articulated the principle of relativity. This was understood by Hermann Minkowski to be a generalization of rotational invariance from space to space-time. Other principles postulated by Einstein and later vindicated are the principle of equivalence
+							and the principle of adiabatic invariance of the quantum number.</p>
+						<a href="https://en.wikipedia.org/wiki/Principle_of_relativity" class="cd-read-more">Read more</a>
+						<span class="cd-date">1905</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="img/theory-of-relativity.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Special theory of relativity and \(E = mc^2 \)</h2>
+						<p> Einstein's "Zur Elektrodynamik bewegter Körper" ("On the Electrodynamics of Moving Bodies") was received on 30 June 1905.
+							<br /> It reconciles Maxwell's equations for electricity and magnetism with the laws of mechanics, by introducing major changes to mechanics close to the speed of light. This later became known as Einstein's special theory of relativity.
+							<br /> In his paper on mass–energy equivalence, Einstein produced \( E = mc^2 \) from his special relativity equations.</p>
+						<a href="https://en.wikipedia.org/wiki/Special_relativity" class="cd-read-more">Read more</a>
+						<span class="cd-date">1905</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="img/comet.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Photons and energy quanta</h2>
+						<p> In a 1905 paper, Einstein postulated that light itself consists of localized particles (quanta). Einstein's light quanta were nearly universally rejected by all physicists, including Max Planck and Niels Bohr. This idea only became universally accepted
+							in 1919, with Robert Millikan's detailed experiments on the photoelectric effect, and with the measurement of Compton scattering.</p>
+						<a href="https://en.wikipedia.org/wiki/Photon" class="cd-read-more">Read more</a>
+						<span class="cd-date">1905</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="img/cube.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Quantized atomic vibrations</h2>
+						<p> In 1907, Einstein proposed a model of matter where each atom in a lattice structure is an independent harmonic oscillator. In the Einstein model, each atom oscillates independently—a series of equally spaced quantized states for each oscillator.
+							Einstein was aware that getting the frequency of the actual oscillations would be different, but he nevertheless proposed this theory because it was a particularly clear demonstration that quantum mechanics could solve the specific heat problem
+							in classical mechanics. </p>
+						<a href="https://en.wikipedia.org/wiki/Einstein_solid" class="cd-read-more">Read more</a>
+						<span class="cd-date">1907</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="img/levels.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Wave–particle duality</h2>
+						<p> Einstein showed that Max Planck's energy quanta must have well-defined momenta and act in some respects as independent, point-like particles. This paper introduced the photon concept (although the name photon was introduced later by Gilbert N. Lewis
+							in 1926) and inspired the notion of wave–particle duality in quantum mechanics. Einstein saw this wave–particle duality in radiation as concrete evidence for his conviction that physics needed a new, unified foundation.
+						</p>
+						<a href="https://en.wikipedia.org/wiki/Wave%E2%80%93particle_duality" class="cd-read-more">Read more</a>
+						<span class="cd-date">1909</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="img/genrel.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>General relativity and the equivalence principle</h2>
+						<p>
+							General relativity (GR) is a theory of gravitation that was developed by Albert Einstein between 1907 and 1915. According to general relativity, the observed gravitational attraction between masses results from the warping of space and time by those masses.
+							General relativity has developed into an essential tool in modern astrophysics. It provides the foundation for the current understanding of black holes, regions of space where gravitational attraction is so strong that not even light can escape.
+						</p>
+						<a href="https://en.wikipedia.org/wiki/History_of_general_relativity" class="cd-read-more">Read more</a>
+						<span class="cd-date">1907-1915</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="img/golf.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Hole argument and Entwurf theory</h2>
+						<p> While developing general relativity, Einstein became confused about the gauge invariance in the theory. He formulated an argument that led him to conclude that a general relativistic field theory is impossible. He gave up looking for fully generally
+							covariant tensor equations, and searched for equations that would be invariant under general linear transformations only.
+							<br /> In June 1913, the Entwurf ("draft") theory was the result of these investigations. As its name suggests, it was a sketch of a theory, less elegant and more difficult than general relativity, with the equations of motion supplemented by additional
+							gauge fixing conditions.
+						</p>
+						<a href="https://en.wikipedia.org/wiki/Hole_argument" class="cd-read-more">Read more</a>
+						<span class="cd-date">1913-1915</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="img/wave.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Gravitational waves</h2>
+						<p>
+							In 1916, Einstein predicted gravitational waves, ripples in the curvature of spacetime which propagate as waves, traveling outward from the source, transporting energy as gravitational radiation. The existence of gravitational waves is possible under
+							general relativity due to its Lorentz invariance which brings the concept of a finite speed of propagation of the physical interactions of gravity with it.
+						</p>
+						<a href="https://en.wikipedia.org/wiki/Gravitational_wave" class="cd-read-more">Read more</a>
+						<span class="cd-date">1916</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="img/black-hole.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Cosmology</h2>
+						<p> In 1917, Einstein applied the general theory of relativity to the structure of the universe as a whole. He discovered that the general field equations predicted a universe that was dynamic, either contracting or expanding. As observational evidence
+							for a dynamic universe was not known at the time, Einstein introduced a new term, the cosmological constant, to the field equations, in order to allow the theory to predict a static universe. The modified field equations predicted a static universe
+							of closed curvature, in accordance with Einstein's understanding of Mach's principle in these years.
+						</p>
+						<a href="https://en.wikipedia.org/wiki/Cosmology" class="cd-read-more">Read more</a>
+						<span class="cd-date">1917</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="img/diagram.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Bose–Einstein statistics</h2>
+						<p> In 1924, Einstein received a description of a statistical model from Indian physicist Satyendra Nath Bose, based on a counting method that assumed that light could be understood as a gas of indistinguishable particles. Einstein noted that Bose's
+							statistics applied to some atoms as well as to the proposed light particles, and submitted his translation of Bose's paper to the Zeitschrift für Physik. Einstein also published his own articles describing the model and its implications, among
+							them the Bose–Einstein condensate phenomenon that some particulates should appear at very low temperatures.
+						</p>
+						<a href="https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_statistics" class="cd-read-more">Read more</a>
+						<span class="cd-date">1924</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="img/brainstorm.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Einstein–Podolsky–Rosen paradox</h2>
+						<p> In 1935, Einstein returned to the question of quantum mechanics. He considered how a measurement on one of two entangled particles would affect the other. He noted, along with his collaborators, that by performing different measurements on the distant
+							particle, either of position or momentum, different properties of the entangled partner could be discovered without disturbing it in any way.
+							<br /> He then used a hypothesis of local realism to conclude that the other particle had these properties already determined. The principle he proposed is that if it is possible to determine what the answer to a position or momentum measurement would
+							be, without in any way disturbing the particle, then the particle actually has values of position or momentum.
+						</p>
+						<a href="https://en.wikipedia.org/wiki/EPR_paradox" class="cd-read-more">Read more</a>
+						<span class="cd-date">1935</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="img/shrink.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>Unified field theory</h2>
+						<p> Following his research on general relativity, Einstein entered into a series of attempts to generalize his geometric theory of gravitation to include electromagnetism as another aspect of a single entity. In 1950, he described his "unified field
+							theory" in a Scientific American article entitled "On the Generalized Theory of Gravitation". Although he continued to be lauded for his work, Einstein became increasingly isolated in his research, and his efforts were ultimately unsuccessful.
+							In his pursuit of a unification of the fundamental forces, Einstein ignored some mainstream developments in physics, most notably the strong and weak nuclear forces, which were not well understood until many years after his death. Mainstream physics,
+							in turn, largely ignored Einstein's approaches to unification. Einstein's dream of unifying other laws of physics with gravity motivates modern quests for a theory of everything and in particular string theory, where geometrical fields emerge in
+							a unified quantum-mechanical setting.
+						</p>
+						<a href="https://en.wikipedia.org/wiki/Classical_unified_field_theories" class="cd-read-more">Read more</a>
+						<span class="cd-date">1950</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+				<!-- cd-timeline-block -->
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="img/wikipedia.svg" alt="Movie">
+					</div>
+					<!-- cd-timeline-img -->
+					<div class="cd-timeline-content">
+						<h2>And many, many more...</h2>
+						<p> This was just a small subset of what this man has done for mankind and science. If you want to know more about the greatest genius that has ever lived, just click the Button!
+						</p>
+						<a href="https://en.wikipedia.org/wiki/Albert_Einstein" class="cd-read-more">Read more</a>
+						<span class="cd-date">now</span>
+					</div>
+					<!-- cd-timeline-content -->
+				</div>
+		</div>
+	<!-- cd-timeline-block -->
+	</section>
+	<!-- cd-timeline -->
+	</div>
 </body>
 <script src="js/main.js"></script>
 
