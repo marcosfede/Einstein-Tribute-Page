@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Einstein Tribute page</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
@@ -27,32 +28,44 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 
-	<!-- big image -->
-	<div id="img">
-		<img src="img/einstein.jpg">
-	</div>
+	<div>
+		<div class="fixed-action-btn vertical" style="bottom: 45px; right: 24px;">
+			<a class="btn-floating btn-large grey">
+				<i class="large material-icons">chat_bubble</i>
+			</a>
+			<ul>
+				<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+				<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+				<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+				<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+			</ul>
+		</div>
+		<!-- big image -->
+		<div id="img">
+			<img src="img/einstein.jpg">
+		</div>
 
-	<!--container for the rest -->
+		<!--container for the rest -->
 		<div id="timeline">
 			<div class="container">
 				<div class="row">
-			<div class="col s12 m8 offset-m2 l6 offset-l3">
-				<div id="heading-card" class="card-panel grey lighten-5 z-depth-2">
-					<div id ="heading-card-content" class="row valign-wrapper">
-						<div class="col s2">
-							<img src="img/circleeinstein.jpg" alt="" class="circle responsive-img">
-							<!-- notice the "circle" class -->
-						</div>
-						<div class="col s10">
-							<span>
+					<div class="col s12 m8 offset-m2 l6 offset-l3">
+						<div id="heading-card" class="card-panel grey lighten-5 z-depth-2">
+							<div id="heading-card-content" class="row valign-wrapper">
+								<div class="col s2">
+									<img src="img/circleeinstein.jpg" alt="" class="circle responsive-img">
+									<!-- notice the "circle" class -->
+								</div>
+								<div class="col s10">
+									<span>
 		                Some of his greatest contributions
 		              </span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		</div>
 
 			<section id="cd-timeline" class="cd-container">
 
@@ -292,10 +305,10 @@
 					</div>
 					<!-- cd-timeline-content -->
 				</div>
+				<!-- cd-timeline-block -->
+			</section>
+			<!-- cd-timeline -->
 		</div>
-	<!-- cd-timeline-block -->
-	</section>
-	<!-- cd-timeline -->
 	</div>
 </body>
 <script src="js/main.js"></script>
