@@ -54,3 +54,9 @@ body {
     margin-left: -33%;
     margin-top: -33%;
 }
+.cd-date {
+    visibility: hidden;
+}
+a.cd-read-more:hover {
+    background: #2196f3 !important;
+}
